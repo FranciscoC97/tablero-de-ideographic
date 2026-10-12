@@ -1,0 +1,91 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f4f0e8;
+  color: #292929;
+  text-align: center;
+  position: relative;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 12px 18px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background: white;
+  font-size: 16px;
+}
+
+#board {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 8px;
+  touch-action: none;
+}
+
+
+#timer {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 10;
+  width: 170px;
+  margin: 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #aaa;
+  border-radius: 12px;
+}
+
+#timeDisplay {
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+#timer h2 {
+  font-size: 16px;
+  margin: 4px;
+}
+
+#timer .timeInputs {
+  gap: 5px;
+}
+
+#timer .timeInputs input {
+  width: 70px;
+}
+
+#timer .timerButtons button {
+  padding: 6px;
+  font-size: 12px;
+}
+
+.tools {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 10;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tools button {
+  padding: 8px;
+}
