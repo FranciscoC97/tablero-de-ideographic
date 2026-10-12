@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ideographic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="tools">
+    <button id="pen">✏️ <p>Lápiz</p> </button>
+    <button id="eraser">🆑 <p>Borrador</p></button>
+    <button id="clear">🗑️ <p>Vaciar</p></button>
+  </div>
+
+  <canvas id="board"></canvas>
+
+
+<section id="timer">
+
+  <div id="timeDisplay">05:00</div>
+
+  <div class="timeInputs">
+    <label>
+      Minutos
+      <input id="minutes" type="number"
+             min="0" max="999" value="5">
+    </label>
+
+    <label>
+      Segundos
+      <input id="seconds" type="number"
+             min="0" max="59" value="0">
+    </label>
+  </div>
+
+  <div class="timerButtons">
+    <button id="startTimer">⏱️🟩 <p>Iniciar</p></button>
+    <button id="pauseTimer">⏱️🟨 <p>Pausar</p></button>
+    <button id="finishTimer">⏱️🟥 <p>Finalizar</p></button>
+    <button id="resetTimer">⏱️⬜ <p>Reiniciar</p></button>
+  </div>
+</section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
